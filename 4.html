@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website / App </title>
+    <!-- Base Core -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            width: 20%;
+        }
+
+        .content {
+            width: 80%;
+        }
+    </style>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="index.html">Главная</a>
+        <a href="2.html">Как работает Веб</a>
+        <a href="4.html">Основы html</a>   
+        <a href="3.html">Oсновы css</a>
+        <a href="1.html">Чистый CSS или фреймворк.</a>
+        <a href="5.html">Фреймворки</a>
+    </div>
+    <!-- Page content -->
+    <div class="main">
+        <style>
+            body {
+                background: url('1667627329_3-57.jpg');
+            }
+        </style>
+        <h1><center>Основы html</center></h1>
+        <h2>Понятие</h2>
+        <p>
+            HTML (Hypertext Markup Language) - это код,
+             который используется для структурирования и отображения веб-страницы и её контента.
+              Например, контент может быть структурирован внутри множества параграфов,
+               маркированных списков или с использованием изображений и таблиц данных.
+             Как видно из названия, эта статья даст вам базовое понимание HTML и его функций.
+        </p>
+            <h3>Что такое HTML на самом деле?</h3>
+            <p>
+                HTML не является языком программирования;
+                это язык разметки, и используется, чтобы сообщать вашему браузеру,
+                как отображать веб-страницы, которые вы посещаете.
+                 Он может быть сложным или простым, в зависимости от того, как хочет веб-дизайнер.
+                HTML состоит из ряда элементов, которые вы используете, чтобы вкладывать или оборачивать различные части контента,
+                 чтобы заставить контент отображаться или действовать определённым образом.
+                 Ограждающие теги могут сделать слово или изображение ссылкой на что-то ещё,
+                 могут сделать слова курсивом, сделать шрифт больше или меньше и так далее.
+            </p>    
+        <p><h3>HTML-элементы</h3></p>
+        <p>
+            HTML-элементы — основа языка HTML. Каждый HTML-документ состоит из дерева HTML-элементов и текста.
+             Каждый HTML-элемент обозначается начальным (открывающим) и конечным (закрывающим) тегом.
+             Открывающий и закрывающий теги содержат имя элемента.
+        </p>
+            <p>
+                Фреймворки сильно отличаются друг от друга и имеют разные подходы, но у них общие цели:
+            </p>
+    <h2>Основные HTML-элементы</h2>
+    <table class="table table-striped table-hover table-bordered">
+        <tbody>
+         <tr>
+           <td>&lt;!DOCTYPE &gt;</td>
+           <td>Объявляет тип документа и предоставляет основную информацию для браузера — его язык и версия.</td>
+         </tr>
+         <tr>
+           <td>&lt;head &gt;</td>
+           <td>содержит техническую системную информацию о документе (метаданные).</td>
+         </tr>
+         <tr>
+            <td>&lt;title &gt;</td>
+            <td>определяет заголовок документа.</td>
+          </tr>
+          <tr>
+            <td>&lt;body &gt;</td>
+            <td>определяет тело (основной контент) HTML документа.</td>
+          </tr>
+          <tr>
+            <td>&lt;h1 &gt; - &lt;h6 &gt;</td>
+            <td>определяет HTML заголовки (от первого до шестого уровня).</td>
+          </tr>
+         <tr>
+           <td>&lt;a &gt;</td>
+           <td>Создаёт гипертекстовые ссылки.</td>
+         </tr>
+         
+         <tr>
+           <td>&lt;p &gt;</td>
+           <td>определяет параграф.</td>
+         </tr>
+         <tr>
+            <td>&lt;button &gt;</td>
+            <td>Создает интерактивную кнопку. Элемент может содержать текст или изображение.</td>
+          </tr>
+          <tr>
+            <td>&lt;!-- … -- &gt;</td>
+            <td>определяет комментарии.</td>
+          </tr>
+        </tbody>
+       </table>
+       <img src="html5-tags.jpg"style="margin: 10px 15px 20px 7px">
+       <p>
+        Это только некоторые из основных тегов HTML,
+        существует множество других тегов для различных целей,
+        таких как таблицы, формы, списки.
+        </p>
+        <p>
+        Важно понимать как эти теги используются и как они взаимодействуют друг с другом,
+        чтобы можно было создавать и модифицировать веб-страницы качественно.
+       </p>
+       <a href="2.html"><button class="button button-mybutton">Назад</button></a> 
+       <a href="3.html"><button class="button button-mybutton">Вперед</button></a>
+    </div>
+
+
+<footer>
+    <p>Shuchalin Denis 335а</p>
+</footer>
+</body>

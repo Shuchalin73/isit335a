@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website / App </title>
+    <!-- Base Core -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            width: 20%;
+        }
+
+        .content {
+            width: 80%;
+        }
+    </style>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="index.html">Главная</a>
+        <a href="2.html">Как работает Веб</a>
+        <a href="4.html">Основы html</a>   
+        <a href="3.html">Oсновы css</a>
+        <a href="1.html">Чистый CSS или фреймворк.</a>
+        <a href="5.html">Фреймворки</a>
+
+    </div>
+    <!-- Page content -->
+    <div class="main">
+        <h1><center>Чистый CSS или фреймворк. На чем писать?</center></h1>
+        <p>
+            При выборе между чистым CSS и фреймворком следует учитывать несколько факторов,
+            таких как потребности проекта, время, доступные ресурсы и уровень знаний разработчика.
+        <p>
+            Проще говоря, CSS framework - это коллекция стилей CSS, подготовленных и готовых к использованию.
+        <p>
+            <h2><center>Чистый CSS</center></h2>
+            <style>
+                body {
+                    background: url('1667627329_3-57.jpg');
+                }
+            </style>
+            </center>
+        <p><h3>Преимущества</h3></p>
+
+        <ul>
+            <li>
+                Один из главных плюсов использования чистого CSS — это более гибкий подход к созданию дизайна.
+                Вы можете создать более уникальный и индивидуальный дизайн, который соответствует вашим потребностям.
+                Более гибкий подход также означает, что вы можете легче настроить дизайн для каждой страницы, что может быть полезно,
+                если у вас есть различные типы контента.
+            </li>
+            <li>
+                Еще одно преимущество чистого CSS — это более легкий файл CSS,
+                что означает быстрое время загрузки страницы. При использовании фреймворка,
+                вы можете подключать множество лишних CSS файлов и скриптов,
+                что, в свою очередь, может замедлить время загрузки страницы.
+            </li>, что
+        </ul>
+        <p><h3>Недостатки</h3></p>
+
+        <ul>
+            <li>
+                Одним из недостатков использования чистого CSS является то,
+                что требуется больше времени на создание дизайна, особенно если у вас нет опыта в работе с CSS.
+                Это может быть сложно, особенно если вы хотите создать современный и красивый дизайн,
+                который соответствует последним тенденциям в веб-дизайне.
+            </li>
+            <li>
+                Еще одним недостатком чистого CSS может быть то,
+                что может быть сложно создавать современные дизайны без использования дополнительных инструментов.
+                Некоторые функции, такие как анимации, могут быть трудными для создания без использования фреймворка или библиотеки.
+            </li>
+        </ul>
+        <p><h3><center>Фреймворк</center></h3></p>
+        <p><h3>Преимущества</h3></p>
+        <ul>
+            <li>
+                Один из главных плюсов использования фреймворка —
+                это быстрый и эффективный способ создания дизайна.
+                Фреймворки предоставляют вам встроенные компоненты,
+                которые можно использовать для создания дизайна.
+                Это может ускорить процесс разработки и упростить вашу работу.
+            </li>
+            <li>
+                Еще одно преимущество фреймворков —
+                это то, что они имеют встроенные компоненты,
+                которые могут ускорить процесс разработки.
+                Вы можете легко создавать современные дизайны благодаря встроенным компонентам,
+                таким как готовые шаблоны, анимации и др.я фреймворка или библиотеки.
+            </li>
+        </ul>
+        <p><h3>Недостатки</h3></p>
+        <ul>
+            <li>
+                Одним из недостатков использования фреймворка является большой размер файла CSS,
+                что может замедлить загрузку страницы. При использовании фреймворка,
+                вы можете подключать множество лишних CSS файлов и скриптов,
+                что, в свою очередь, может замедлить время загрузки страницы.
+            </li>
+            <li>
+                Еще одним недостатком фреймворков может быть то,
+                что они могут быть сложными для настройки под свои нужды.
+                Фреймворки предоставляют вам множество заготовок,
+                которые можно использовать для создания дизайна, но иногда настройка этих заготовок может быть сложной.
+            </li>
+        </ul>
+        <center> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VJl8_jJfjGg?si=k5RvJM07VVHF3D6l" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+        </center>
+    <a href="3.html"><button class="button button-mybutton">Назад</button></a> 
+    <a href="5.html"><button class="button button-mybutton">Вперед</button></a>
+    </div>
+    <footer>
+    <p>Shuchalin Denis 335а</p>
+</footer>
+</body>

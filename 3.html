@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website / App </title>
+    <!-- Base Core -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            width: 20%;
+        }
+
+        .content {
+            width: 80%;
+        }
+    </style>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="index.html">Главная</a>
+        <a href="2.html">Как работает Веб</a>
+        <a href="4.html">Основы html</a>   
+        <a href="3.html">Oсновы css</a>
+        <a href="1.html">Чистый CSS или фреймворк.</a>
+        <a href="5.html">Фреймворки</a>
+    </div>
+    <!-- Page content -->
+    <div class="main">
+        <style>
+            body {
+                background: url('1667627329_3-57.jpg');
+            }
+        </style>
+        <h1><center>Основы CSS</center></h1>
+        <h2>Так что же такое CSS?</h2>
+        <p>
+            Как и HTML, CSS на самом деле не является языком программирования.
+             Это не язык разметки - это язык таблицы стилей.
+              Это означает, что он позволяет применять стили выборочно к элементам в документах HTML.
+              
+        </p>
+        <p>
+            Существует несколько способов подключения стилей CSS (Cascading Style Sheets) к HTML (HyperText Markup Language) документу:
+        </p>
+        <ul>
+            <li>
+                Через внешний файл стилей тегом link:
+                 это наиболее правильный вариант определения общих стилей для сайта.
+                  Подключайте внешний файл CSS с помощью тега &lt;link&gt;.
+            </li>
+            <li>
+                Через тег style: этот метод подойдет,
+                 когда нужно вставить (определить) стили для группы уникальных элементов страницы.
+            </li>
+            <li>
+                С помощью JavaScript: на каждом современном сайте используются скрипты, написанные на языке JavaScript.
+                 В JavaScript, при использовании библиотеки jQuery, есть много различных функций для управления стилями HTML элементов.
+            </li>
+        </ul>
+        
+        </p>
+            <h3>Селекторы</h3>
+            <p>
+                Селекторы представляют структуру веб-страницы. С их помощью создаются правила для форматирования элементов веб-страницы.
+                Селекторами могут быть элементы, их классы и идентификаторы, а также псевдоклассы и псевдоэлементы.
+            </p>    
+            <h3>Наследование и каскад</h3>
+        <p>Наследование и каскад — два фундаментальных понятия в CSS, которые тесно связаны между собой.
+            Наследование заключается в том, что элементы наследуют свойства от своего родителя (элемента, их содержащего).    
+            Каскад проявляется в том,
+            как разные виды таблиц стилей применяются к документу, и как конфликтующие правила переопределяют друг друга.
+        </p>
+        <center> 
+            <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/mA6EaGs6rak?si=QGeWYOFoH6phqH_u" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+     </center> 
+     <a href="4.html"><button class="button button-mybutton">Назад</button></a> 
+     <a href="1.html"><button class="button button-mybutton">Вперед</button></a>
+    </div>
+
+
+<footer>
+    <p>Shuchalin Denis 335а</p>
+</footer>
+</body>

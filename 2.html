@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website / App </title>
+    <!-- Base Core -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            width: 20%;
+        }
+
+        .content {
+            width: 80%;
+        }
+    </style>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="index.html">Главная</a>
+        <a href="2.html">Как работает Веб</a>
+        <a href="4.html">Основы html</a>   
+        <a href="3.html">Oсновы css</a>
+        <a href="1.html">Чистый CSS или фреймворк.</a>
+        <a href="5.html">Фреймворки</a>
+
+    </div>
+    <!-- Page content -->
+    <div class="main">
+        <style>
+            body {
+                background: url('1667627329_3-57.jpg');
+            }
+        </style>
+        <h1><center>Как работает Веб</center></h1>
+        <h3>Основа</h3>
+        <p>
+            Как работает Веб даст упрощённое представление о том,
+             что происходит при просмотре веб-страницы в браузере на вашем компьютере или телефоне.
+            Эта теория не так важна для написания веб-кода в краткосрочной перспективе,
+            но в скором времени вы действительно начнёте извлекать выгоду из понимания того, что происходит в фоновом режиме.
+        </p>
+            <h3>Клиенты и серверы</h3>
+            <p>
+                Когда мы пытаемся перейти на какой-нибудь веб-сайт, допустим, на linkedin.com,
+                 то наш браузер превращается в клиент. Он выполняет запрос к серверу.
+                  Сервер создаётся LinkedIn. Когда кто-то создаёт веб-сайт, 
+                  он должен содержать этот веб-сайт на каком-то сервере. 
+                  Иногда для этого используется поставщик облачных услуг наподобие AWS или Azure,
+                   или же можно создать сервер самостоятельно.
+            </p>
+            <p>Сервер будет отправлять клиенту HTML, после чего клиент, 
+                который, повторюсь, является обычным веб-браузером, 
+                интерпретирует этот HTML и генерирует пользовательский интерфейс.
+                Пока вы продолжаете пользоваться linkedin.com и взаимодействовать со страницей,
+                браузер продолжает обмениваться данными с сервером.
+            </p>
+            <p>
+                Иногда один компьютер может быть в двух разных взаимодействиях и клиентом, и сервером. 
+                Например, одна машина может быть сервером для конечных пользователей и клиентом для базы данных.
+
+            </p>    
+        <p><h3>Жизненный цикл запроса веб-страницы</h3></p>
+        <p>Что же происходит, когда мы переходим на linkedin.com?
+             Что делает браузер, чтобы запросить HTML для этой страницы с сервера LinkedIn?
+              Чтобы ответить на эти вопросы, нам сначала нужно взглянуть на её URL.
+             Полный URL может выглядеть примерно так: https://www.linkedin.com:443/feed. Давайте его разберём.
+        </p>
+        <ul>
+            <li>
+                HTTPS — это протокол, определяющий, как будет отформатирован этот запрос.
+                 HTTPS и HTTP — это стандартные протоколы для обмена данными в Интернете.
+            </li>
+            <li>
+                После протокола идут двоеточие и две косые черты, затем поддомен,
+                 а также доменное имя. linkedin.com — это доменное имя,
+                  а также имя веб-сайта. www — это поддомен, его можно воспринимать как домен внутри домена linkedin.
+                   Доменное имя разбито на имя веб-сайта и домен верхнего уровня,
+                 то есть часть .com. Большинство доменов верхнего уровня связано с какой-нибудь страной.
+            </li>
+            <li>
+                Далее указан порт 443, который можно не указывать, потому что это стандартный порт.
+                 Для HTTPS по умолчанию используется порт 443, а для HTTP — 80.
+                  В URL почти никогда не требуется указывать порт.
+            </li>
+            <li>
+                Затем идёт путь к ресурсу, который мы запрашиваем.
+                 Если вы просто запрашиваете домашнюю страницу, то большинство серверов позволяет не указывать путь.
+                  Однако если вам нужен конкретный ресурс, например, лента новостей LinkedIn,
+                   то нужно будет добавить косую черту и путь feed.
+            </li>
+        </ul>
+
+        <p><h3>Hypertext Transfer Protocol (HTTP)</h3></p>
+        <p>HTTP — это стандартный сетевой протокол,
+         используемый для отправки запросов и ответов в вебе. HTTP-запросы в общем случае состоят из трёх компонентов:
+        </p>
+        <ul>
+            <li>
+                Строка запроса — включает в себя метод, путь и версию HTTP
+            </li>
+            <li>
+                Заголовки — содержат пары «ключ-значение» дополнительной информации для сервера
+            </li>
+            <li>
+                Тело — содержимое запроса, например, новые данные, загружаемые в POST-запросе.
+            </li>
+        </ul>
+        <center> 
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/g94j-ahVR78?si=T8umd5UFzw1feQr4" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+     </center> 
+     <a href="index.html"><button class="button button-mybutton">Назад</button></a> 
+     <a href="4.html"><button class="button button-mybutton">Вперед</button></a>
+    </div>
+
+
+<footer>
+    <p>Shuchalin Denis 335а</p>
+</footer>
+</body>
